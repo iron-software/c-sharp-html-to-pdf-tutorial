@@ -19,12 +19,12 @@ using IronPdf;
 
 var Renderer = new IronPdf.ChromePdfRenderer();
 
-/ Advanced Example with HTML Assets
+// Advanced Example with HTML Assets
 // Load external html assets: Images, CSS and JavaScript.
 // An optional BasePath 'C:\site\assets\' is set as the file location to load assets from 
 var myAdvancedPdf = Renderer.RenderHtmlAsPdf("<img src='icons/iron.png'>", @"C:\site\assets\");
 
-pdf.SaveAs("html-with-assets.pdf");
+myAdvancedPdf.SaveAs("html-with-assets.pdf");
 ```
 
 Further Reading: https://ironpdf.com/tutorials/html-to-pdf/
